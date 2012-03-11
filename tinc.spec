@@ -8,6 +8,7 @@ URL:            http://www.tinc-vpn.org/
 Source0:        http://www.tinc-vpn.org/packages/%{name}-%{version}.tar.gz
 BuildRequires:  openssl-devel
 BuildRequires:  liblzo-devel
+BuildRequires:  pkgconfig(zlib)
 
 Requires(post):  info
 Requires(preun): info
