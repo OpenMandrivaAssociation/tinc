@@ -1,5 +1,5 @@
 Name:           tinc
-Version:        1.0.17
+Version:        1.0.18
 Release:        1
 Summary:        A virtual private network daemon
 Group:          System/Configuration/Networking
