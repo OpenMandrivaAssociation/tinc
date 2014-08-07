@@ -7,7 +7,7 @@ License:        GPLv2+
 URL:            http://www.tinc-vpn.org/
 Source0:        http://www.tinc-vpn.org/packages/%{name}-%{version}.tar.gz
 BuildRequires:  openssl-devel
-BuildRequires:  liblzo-devel
+BuildRequires:  lzo-devel
 BuildRequires:  pkgconfig(zlib)
 
 Requires(post):  info
@@ -41,19 +41,3 @@ rm -f %{buildroot}%{_infodir}/dir
 %{_mandir}/man*/%{name}*.*
 %{_infodir}/%{name}.info.xz
 %{_sbindir}/%{name}d
-
-
-%changelog
-* Wed Jun 27 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.0.19-1
-+ Revision: 807191
-- version update 1.0.19
-
-* Mon Mar 26 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.0.18-1
-+ Revision: 787131
-- version update 1.0.18
-- BR:liblzo
-
-* Sun Mar 11 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.0.17-1
-+ Revision: 784260
-- imported package tinc
-
