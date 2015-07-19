@@ -1,6 +1,6 @@
 Name:           tinc
 Version:        1.0.22
-Release:        8
+Release:        9
 Summary:        A virtual private network daemon
 Group:          System/Configuration/Networking
 License:        GPLv2+
