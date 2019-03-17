@@ -1,6 +1,6 @@
 Name:           tinc
-Version:        1.0.22
-Release:        10
+Version:        1.0.35
+Release:        1
 Summary:        A virtual private network daemon
 Group:          System/Configuration/Networking
 License:        GPLv2+
@@ -30,10 +30,10 @@ information to others.
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 rm -f %{buildroot}%{_infodir}/dir
 
 %files
