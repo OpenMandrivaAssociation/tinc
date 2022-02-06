@@ -6,7 +6,7 @@ Group:          System/Configuration/Networking
 License:        GPLv2+
 URL:            http://www.tinc-vpn.org/
 Source0:        http://www.tinc-vpn.org/packages/%{name}-%{version}.tar.gz
-BuildRequires:  openssl-devel
+BuildRequires:  pkgconfig(openssl)
 BuildRequires:  lzo-devel
 BuildRequires:  pkgconfig(zlib)
 
@@ -25,7 +25,7 @@ information to others.
 
 
 %prep
-%setup -q
+%autosetup -p1 
 
 
 %build
@@ -34,10 +34,10 @@ information to others.
 
 %install
 %make_install
-rm -f %{buildroot}%{_infodir}/dir
+#rm -f %{buildroot}%{_infodir}/dir
 
 %files
 %doc AUTHORS COPYING COPYING.README NEWS README THANKS doc/sample* doc/*.tex
 %{_mandir}/man*/%{name}*.*
-%{_infodir}/%{name}.info.xz
+%{_infodir}/tinc.info.*
 %{_sbindir}/%{name}d
