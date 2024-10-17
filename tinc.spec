@@ -4,7 +4,7 @@ Release:	2
 Summary:        A virtual private network daemon
 Group:          System/Configuration/Networking
 License:        GPLv2+
-URL:            http://www.tinc-vpn.org/
+URL:            https://www.tinc-vpn.org/
 Source0:        http://www.tinc-vpn.org/packages/%{name}-%{version}.tar.gz
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  lzo-devel
