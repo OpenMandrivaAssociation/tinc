@@ -6,6 +6,11 @@ Group:          System/Configuration/Networking
 License:        GPLv2+
 URL:            https://www.tinc-vpn.org/
 Source0:        http://www.tinc-vpn.org/packages/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  lzo-devel
 BuildRequires:  pkgconfig(zlib)
